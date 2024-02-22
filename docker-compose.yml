@@ -1,0 +1,12 @@
+services:
+  atcoder-review-bot:
+    build:
+      context: . # Dockerfileがあるディレクトリを指定
+    image: atcoder-review-bot:0.1.0
+    container_name: atcoder-review-bot
+    volumes:
+      - type: bind
+        source: .
+        target: /src
+    ports:
+      - 8000:8000  # ホストマシンのポート8000をdocker内のポート8000に接続する

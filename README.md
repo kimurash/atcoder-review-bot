@@ -1,0 +1,3 @@
+# AtCoder Review Bot
+
+Notionのデータベースから復習すべき問題を提案してくれるLINEボット
