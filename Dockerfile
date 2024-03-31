@@ -17,5 +17,5 @@ COPY pyproject.toml poetry.lock ./
 # --no-root: プロジェクトのパッケージはインストールしない
 RUN if [ -f pyproject.toml ]; then poetry install --no-root; fi
 
-# uvicornのサーバーを立ち上げる
+# gunicornのサーバーを立ち上げる
 ENTRYPOINT ["poetry", "run", "gunicorn", "--config", "gunicorn.conf.py", "api.main:app"]
