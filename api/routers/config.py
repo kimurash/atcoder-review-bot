@@ -75,11 +75,11 @@ ALMOST_AC_STAMP = [
 CANNOT_AC_STAMP = [
     {
         'package_id': 446,
-        'sticker_id': 2205
+        'sticker_id': 2005
     },
     {
         'package_id': 446,
-        'sticker_id': 2207
+        'sticker_id': 2007
     },
     {
         'package_id': 446,
